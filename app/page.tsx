@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   const tsx_content = "TSX ou JSX ";
   const age = 28;
@@ -19,6 +21,9 @@ export default function Home() {
       ) : (
         <h2>Nao existe elemento na lista</h2>
       )}
+      <Link href={"/pets"} className="border p-2 ml-2.5">
+        Ir
+      </Link>
     </div>
   );
 }
