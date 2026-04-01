@@ -1,6 +1,7 @@
 import Image from "next/image";
 import dolly from "../../assets/dolly.jpg";
 import molly from "../../assets/molly.jpg";
+import Link from "next/link";
 export default function Pets() {
   const animals = [
     {
@@ -47,6 +48,7 @@ export default function Pets() {
           );
         })}
       </ul>
+      <Link href={"/"}>Voltar</Link>
     </div>
   );
 }

@@ -24,6 +24,9 @@ export default function Home() {
       <Link href={"/pets"} className="border p-2 ml-2.5">
         Ir
       </Link>
+      <Link href={"/filmes"} className="border p-2 ml-2.5">
+        Filmes
+      </Link>
     </div>
   );
 }
