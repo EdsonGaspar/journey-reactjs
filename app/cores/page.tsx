@@ -1,4 +1,5 @@
 import { Colorizer } from "@/components/cores/colorizer";
+import { CounterComponent } from "@/components/cores/conter";
 
 export default function PageColor() {
   return (
@@ -7,6 +8,7 @@ export default function PageColor() {
         Tratamento de cores
       </header>
       <Colorizer />
+      <CounterComponent />
     </div>
   );
 }

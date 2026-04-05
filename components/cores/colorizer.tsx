@@ -22,7 +22,7 @@ export function Colorizer() {
       >
         <span className="p-2">{color}</span>
       </div>
-      <button className="border rounded-xl" onClick={handleColor}>
+      <button className="border rounded-md px-6 py-1" onClick={handleColor}>
         Mudar
       </button>
     </div>
