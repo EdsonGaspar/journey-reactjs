@@ -27,7 +27,12 @@ export default function Home() {
       <Link href={"/filmes"} className="border p-2 ml-2.5">
         Filmes
       </Link>
-      <Link href={"./pessoa"}>Pessoa</Link>
+      <Link href={"./pessoa"} className="border p-2 ml-2.5">
+        Pessoa
+      </Link>
+      <Link href={"./cores"} className="border p-2 ml-2.5">
+        Cor
+      </Link>
     </div>
   );
 }
