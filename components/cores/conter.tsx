@@ -8,7 +8,8 @@ export function CounterComponent() {
   const [counter, setCounter] = useState(() => Math.floor(Math.random() * 16));
 
   const increment = () => {
-    setCounter(counter + 3);
+    // setCounter(counter + 3);
+    setCounter((prevent) => prevent + 3);
   };
   return (
     <div className="flex items-center justify-center flex-col my-6 gap-2.5">
