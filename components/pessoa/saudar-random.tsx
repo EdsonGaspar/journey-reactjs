@@ -5,7 +5,17 @@ export function RandomGreeting() {
   const [random] = useState(() => Math.floor(Math.random() * 5) + 1);
   const [greeting, setGreeting] = useState("");
 
+  const randomMax = 5;
+
   useEffect(() => {
+    window.localStorage.setItem("Random", random.toString());
+
+    if (randomMax === random) {
+      window.localStorage.setItem("jackpot", String(true));
+    } else {
+      window.localStorage.setItem("jackpot", String(false));
+    }
+
     switch (random) {
       case 1:
         // eslint-disable-next-line react-hooks/set-state-in-effect
@@ -28,6 +38,10 @@ export function RandomGreeting() {
         setGreeting("Saudações");
         break;
     }
+
+    return () => {
+      window.localStorage.removeItem("jackpot");
+    };
   }, [random]);
   return (
     <div className="flex justify-center items-center">
