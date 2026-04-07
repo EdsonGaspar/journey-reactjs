@@ -33,6 +33,9 @@ export default function Home() {
       <Link href={"./cores"} className="border p-2 ml-2.5">
         Cor
       </Link>
+      <Link href={"./usuarios"} className="border p-2 ml-2.5">
+        Encontre Usuarios
+      </Link>
     </div>
   );
 }
