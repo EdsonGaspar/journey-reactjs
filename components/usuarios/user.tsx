@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { GitHubUser } from "./github-user";
+import { GitHubUserApi } from "./github-user-api";
 
 export function UserComponents() {
   const [user, setUser] = useState("");
@@ -25,7 +26,7 @@ export function UserComponents() {
         </form>
         <div className="flex justify-center text-lg text-white/65">
           {user ? (
-            <GitHubUser userName={user} />
+            <GitHubUserApi userName={user} />
           ) : (
             "Comece a pesquisar por um usuario"
           )}
