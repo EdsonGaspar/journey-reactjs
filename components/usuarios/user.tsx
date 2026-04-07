@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { GitHubUser } from "./github-user";
 
 export function UserComponents() {
   const [user, setUser] = useState("");
@@ -23,7 +24,11 @@ export function UserComponents() {
           />
         </form>
         <div className="flex justify-center text-lg text-white/65">
-          {user ? <p>{user}</p> : "Comece a pesquisar por um usuario"}
+          {user ? (
+            <GitHubUser userName={user} />
+          ) : (
+            "Comece a pesquisar por um usuario"
+          )}
         </div>
       </main>
     </div>
