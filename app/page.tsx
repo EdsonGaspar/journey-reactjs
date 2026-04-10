@@ -36,6 +36,9 @@ export default function Home() {
       <Link href={"./usuarios"} className="border p-2 ml-2.5">
         Encontre Usuarios
       </Link>
+      <Link href={"./devs"} className="border p-2 ml-2.5">
+        GitHub Users
+      </Link>
     </div>
   );
 }
