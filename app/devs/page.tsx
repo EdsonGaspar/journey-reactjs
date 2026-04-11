@@ -1,4 +1,4 @@
-import { GitHubUsers } from "@/components/github-users";
+import { GitHubUsers } from "@/components/github-users/github-users";
 
 export default function DevPage() {
   return (
