@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { GitHubUser } from "./github-user";
 import { GitHubUserApi } from "./github-user-api";
 
 export function UserComponents() {

@@ -35,8 +35,8 @@ export function GitHubUsers() {
           <h2>{user?.name}</h2>
           <p>{user?.bio}</p>
           <Image
-            src={user?.avatar_url || ""}
-            alt={user?.name || ""}
+            src={user.avatar_url}
+            alt={user.name || "Desconhecido"}
             width={350}
             height={350}
           />

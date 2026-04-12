@@ -14,6 +14,7 @@ export function GetGitHubUsers(nameUser: string) {
   const [user, setUser] = useState<GtHubUsersProps | null>(null);
   const [loading, setLoading] = useState(false);
   useEffect(() => {
+    if (!nameUser) return;
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setLoading(true);
     const GetUser = async () => {
