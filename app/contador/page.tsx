@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
+import { Focus } from "./components/focus/focus";
 
 export default function ContadorPage() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -26,6 +27,7 @@ export default function ContadorPage() {
         >
           +1
         </button>
+        <Focus />
       </main>
     </div>
   );
