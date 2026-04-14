@@ -46,6 +46,9 @@ export default function Home() {
         <Link href={"./contador"} className="border p-2 ml-2.5">
           Contador
         </Link>
+        <Link href={"./funcionarios"} className="border p-2 ml-2.5">
+          Funcionarios
+        </Link>
       </div>
     </div>
   );
